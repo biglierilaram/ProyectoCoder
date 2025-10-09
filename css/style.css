@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: black; 
+    color: white; 
+}
+.titulo {
+    text-align: center; 
+    font-size: 3em; 
+    margin: 0; 
+    color: white; 
+}
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: black; 
+}
+
+.banner img {
+    max-width: 100%; 
+    height: auto;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 20px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    border: 2px solid lightblue; 
+    padding: 20px;
+    margin-left: auto; 
+    margin-top: 20px; 
+    width: 300px; 
+    background-color: rgba(0, 0, 0, 0.8); 
+}
+
+.section h3 {
+    text-align: center; 
+    width: 100%; 
+    margin-bottom: 20px; 
+    font-size: 2em; 
+    color: white; 
+}
+
+
+.article {
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 10px; 
+}
+
+.article img {
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 5px; 
+}
+
+.article img:hover {
+    transform: scale(1.05); 
+    transition: transform 0.3s; 
+}
+
+.nav {
+    margin: 20px;
+}
+
+.nav ul {
+    list-style-type: none; 
+    padding: 0;
+}
+
+.nav li {
+    margin: 10px 0; 
+}
+
+
+h1 {
+    text-align: center; 
+    font-size: 2.5em; 
+}
+
+
+h2 {
+    text-align: center; 
+    font-size: 1.8em; 
+}
+
+
+footer {
+    text-align: center; 
+    padding: 20px;
+    background-color: black; 
+}
+
+.suplementos .banner {
+    justify-content: center; 
+}
+
+.materialDeportivo {
+    background-image: url('./fotos/bannerMaterial.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.materialDeportivo h1 {
+    font-size: 3em; 
+}
+
+@media (max-width: 768px) 
+    .section {
+        width: 90%; 
+    }
+    h1 {
+        font-size: 2em; 
+    }
+    h2 {
+        font-size: 1.5em; 
+    }
+
+
+    .products-section {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    width: 100%; 
+    padding: 20px;
+}
+
+.product {
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 10px; 
+    text-align: center; 
+    margin: 10px; 
+    padding: 15px; 
+    width: 200px; 
+}
+
+.product img {
+    width: 100%;
+    height: auto; 
+    border-radius: 5px; 
+}
+
+.product h3 {
+    font-size: 1.5em;
+    margin: 10px 0; 
+}
+
+.product p {
+    font-size: 1em; 
+}
