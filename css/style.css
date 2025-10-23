@@ -1,47 +1,77 @@
-body {
+/*body {
     margin: 0;
+    padding: 10%;
     font-family: 'Bebas Neue', sans-serif;
     background-color: black; 
     color: white; 
 }
-.titulo {
+
+header, main, footer {
+padding: 0;
+text-align: center;
+
+}*/
+
+/*.body-grid {
+   display: grid;
+   grid-template-areas: 
+   "titulo"
+   "banner"
+   "main" 
+   "section"
+   "footer";
+   grid-template-columns: 1fr;
+   grid-template-rows: 100% 100% 80% 80%;
+   min-height: fit-content;
+}
+*/
+
+ 
+/*.titulo {
+    grid-area: titulo;
     text-align: center; 
     font-size: 3em; 
     margin: 0; 
     color: white; 
-}
-.banner {
+} */
+ /*.banner {
+    grid-area: banner;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
     background-color: black; 
-}
+} */
 
-.banner img {
-    max-width: 100%; 
-    height: auto;
-}
+/*.banner-img {
+    max-width: 10%; 
+    height: 10%;
+    list-style-type: none;
+    align-self: self-end;
+}*/
 
 
-main {
+/*.main {
+    grid-area: main;
     display: flex;
     flex-direction: column;
     align-items: center; 
     padding: 20px;
-}
+} */
 
-.section {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end; 
+/*.section {
+    grid-area: section;
+    display: flexbox;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
     border: 2px solid lightblue; 
     padding: 20px;
     margin-left: auto; 
     margin-top: 20px; 
     width: 300px; 
     background-color: rgba(0, 0, 0, 0.8); 
-}
+}*/
 
 .section h3 {
     text-align: center; 
@@ -52,10 +82,11 @@ main {
 }
 
 
-.article {
+/*.article {
     display: flex;
     justify-content: center; 
     margin-bottom: 10px; 
+    align-items: center;
 }
 
 .article img {
@@ -68,8 +99,8 @@ main {
 .article img:hover {
     transform: scale(1.05); 
     transition: transform 0.3s; 
-}
-
+}*/
+/*
 .nav {
     margin: 20px;
 }
@@ -78,9 +109,10 @@ main {
     list-style-type: none; 
     padding: 0;
 }
-
+*/
 .nav li {
     margin: 10px 0; 
+    list-style-type: none;
 }
 
 
@@ -96,12 +128,13 @@ h2 {
 }
 
 
-footer {
+/*.footer {
+    grid-area: footer ;
     text-align: center; 
     padding: 20px;
     background-color: black; 
-}
-
+} 
+*/
 .suplementos .banner {
     justify-content: center; 
 }
@@ -121,26 +154,19 @@ footer {
     font-size: 3em; 
 }
 
-@media (max-width: 768px) 
-    .section {
-        width: 90%; 
-    }
-    h1 {
-        font-size: 2em; 
-    }
-    h2 {
-        font-size: 1.5em; 
-    }
-
-
+/*
     .products-section {
     display: flex;
     justify-content: space-around; 
     flex-wrap: wrap; 
     width: 100%; 
-    padding: 20px;
-}
-
+    padding: 20px; 
+       }
+    .products-section:hover {
+    transform: scale(1.05); 
+    transition: 
+    transform 0.3s; 
+        }
 .product {
     background-color: rgba(255, 255, 255, 0.1); 
     border-radius: 10px; 
@@ -163,4 +189,95 @@ footer {
 
 .product p {
     font-size: 1em; 
+} */
+
+
+/* querie para mobiles */
+/*
+@media (max-width: 800px) { 
+
+   :root {
+  --pad: 16px;
+    }
+   * { box-sizing: border-box; }
+
+.section { grid-template-columns: repeat(2, 1fr); }
+
+  .section .article { padding: 14px; }
+  body { font-size: 15px; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, Arial, sans-serif;
+  color: #333;
 }
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--pad);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.card {
+  background: #f4f4f4;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+
+.header { padding: 12px 0; }
+
+}
+
+
+/* querie tablets */
+
+@media (min-width: 481px) and (max-width: 800px) 
+{
+  :root { --pad: 20px; }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+
+  .card { padding: 20px; }
+  body { font-size: 15px; }
+}
+
+/* querie desktop  */
+
+@media (min-width: 801px) and (max-width: 1200px) 
+{
+  :root { --pad: 28px; }
+
+  .grid {
+    grid-template-columns: repeat(3, 1fr); 
+        }
+
+  .container {
+    padding-left: calc(var(--pad) * 0.5);
+    padding-right: calc(var(--pad) * 0.5);
+             }
+
+   body { font-size: 16px; }
+ 
+  .grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+*/
+
+
+   
+
+
+
+    

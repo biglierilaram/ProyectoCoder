@@ -1,0 +1,66 @@
+body{
+
+main {
+
+   h1{  
+       .titulo {
+         grid-area: titulo;
+         text-align: center; 
+         font-size: 3em; 
+         margin: 0; 
+         color: white; 
+         }
+    
+         .products-section {
+             display: flex;
+             justify-content: space-around; 
+             flex-wrap: wrap; 
+             width: 100%; 
+             padding: 20px; 
+             
+                 .products-section:hover {
+                 transform: scale(1.05); 
+                 transition: 
+                 transform 0.3s; 
+                 }
+        
+                article{
+                 
+                  .product {
+                      background-color: rgba(255, 255, 255, 0.1); 
+                     border-radius: 10px; 
+                     text-align: center; 
+                     margin: 10px; 
+                     padding: 15px; 
+                      width: 200px; 
+
+                        .product img {
+                         width: 100%;
+                         height: auto; 
+                         border-radius: 5px; 
+                          }
+
+                        .product h3 {
+                         font-size: 1.5em;
+                         margin: 10px 0; 
+                          }
+
+                        .product p {
+                         font-size: 1em; 
+                         }
+
+                     }
+
+
+                }
+        
+        
+            }
+    
+    
+    
+    
+    }
+}
+
+}

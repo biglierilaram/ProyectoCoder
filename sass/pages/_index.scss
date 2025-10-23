@@ -1,0 +1,122 @@
+// index//
+body {
+    .body-grid {
+          display: grid;
+         grid-template-areas: 
+         "titulo"
+         "banner"
+         "main" 
+         "section"
+         "footer";
+          grid-template-columns: 1fr;
+         grid-template-rows: 100% 100% 80% 80%;
+         min-height: fit-content;
+
+
+         .banner {
+              grid-area: banner;
+             display: flex;
+             justify-content: space-between;
+             align-items: center;
+             padding: 20px;
+             background-color: black; 
+
+             .titulo {
+                      grid-area: titulo;
+                     text-align: center; 
+                     font-size: 3em; 
+                     margin: 0; 
+                     color: white;
+                    }
+             .banner-img {
+                     max-width: 10%; 
+                     height: 10%;
+                     list-style-type: none;
+                     align-self: self-end;
+                     }
+             
+              }
+
+          .main {
+                 grid-area: main;
+                 display: flex;
+                 flex-direction: column;
+                 align-items: center; 
+                 padding: 20px;
+
+                .nav {
+                       margin: 20px;
+                  
+                         .nav ul {
+                         list-style-type: none; 
+                         padding: 0;
+                             }
+                     }
+              
+                     
+             .section {
+                    grid-area: section;
+                 display: flexbox;
+                 justify-content: center;
+                 flex-direction: row;
+                 align-items: center;
+                 border: 2px solid lightblue; 
+                 padding: 20px;
+                 margin-left: auto; 
+                 margin-top: 20px; 
+                 width: 300px; 
+                 background-color: rgba(0, 0, 0, 0.8); 
+
+                    .article {
+                         display: flex;
+                         justify-content: center; 
+                         margin-bottom: 10px; 
+                         align-items: center;
+
+                            .article img {
+                                 width: 100%; 
+                                 height: 200px; 
+                                 object-fit: cover; 
+                                 border-radius: 5px; 
+                                  }
+
+                                .article img:hover {
+                                 transform: scale(1.05); 
+                                 transition: transform 0.3s; 
+                                 }
+                     }
+
+
+                  }
+            }
+         .footer {
+             grid-area: footer ;
+             text-align: center; 
+             padding: 20px;
+             background-color: black; 
+
+               p{
+                  .nav ul {
+                     list-style-type: none; 
+                     padding: 0;
+                   }
+                 .banner-img {
+                     max-width: 10%; 
+                     height: 10%;
+                     list-style-type: none;
+                     align-self: self-end;
+                     }
+
+                }   
+             }
+
+        
+        
+        
+        } 
+    
+
+
+
+
+        }
