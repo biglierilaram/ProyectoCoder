@@ -1,0 +1,10 @@
+// _footer.scss//
+
+@use "variables.scss";
+
+.footer {
+    grid-area: footer;
+    text-align: center; 
+    padding: 20px;
+    background-color: $background-color; 
+}

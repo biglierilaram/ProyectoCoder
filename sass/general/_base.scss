@@ -1,0 +1,22 @@
+// _base.scss//
+
+@use "variables.scss";
+
+body {
+    margin: 0;
+    padding: 10%;
+    font-family: $font-family;
+    background-color: $background-color; 
+    color: $text-color; 
+}
+
+header, main, footer {
+    padding: 0;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 3em; 
+    margin: 0; 
+    color: $text-color; 
+}

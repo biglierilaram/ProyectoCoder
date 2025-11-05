@@ -1,4 +1,28 @@
+
+
 body{
+
+
+header {
+
+   .materialDeportivo {
+    background-image: url('./fotos/bannerMaterial.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+
+       .materialDeportivo h1 {
+       font-size: 3em; 
+        }
+      
+   }
+
+
+}
 
 main {
 
@@ -27,12 +51,12 @@ main {
                 article{
                  
                   .product {
-                      background-color: rgba(255, 255, 255, 0.1); 
+                     background-color: rgba(255, 255, 255, 0.1); 
                      border-radius: 10px; 
                      text-align: center; 
                      margin: 10px; 
                      padding: 15px; 
-                      width: 200px; 
+                     width: 200px; 
 
                         .product img {
                          width: 100%;
@@ -64,3 +88,4 @@ main {
 }
 
 }
+

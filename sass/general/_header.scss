@@ -1,0 +1,18 @@
+// _header.scss//
+
+@use "variables.scss";
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: $background-color; 
+}
+
+.banner-img {
+    max-width: 10%; 
+    height: 10%;
+    list-style-type: none;
+    align-self: self-end;
+}
