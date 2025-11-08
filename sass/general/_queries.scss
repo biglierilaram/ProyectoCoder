@@ -1,9 +1,11 @@
 // _queries.scss//
-@use "variables.scss";
+@use "variables";
 
-@media (max-width: 800px) { 
+// celu//
+
+@media (min-width: 480px) and (max-width: 600px) { 
     :root {
-        --pad: 16px;
+        --pad: 16px; 
     }
 
     * { 
@@ -11,21 +13,42 @@
     }
 
     .section { 
+        display: grid; 
         grid-template-columns: repeat(2, 1fr); 
     }
 
     .section .article { 
-        padding: 14px; 
+        padding: var(--pad); 
     }
 
     body { 
         font-size: 15px; 
     }
+
+    .grid {
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .card { 
+        padding: var(--pad);
+    }
 }
 
-@media (min-width: 481px) and (max-width: 800px) {
-    :root { 
-        --pad: 20px; 
+// Media Query para Tablets //
+
+@media (min-width: 601px) and (max-width: 800px) {
+    :root {
+        --pad: 24px; 
+    }
+
+    .section { 
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    body { 
+        font-size: 16px; 
     }
 
     .grid {
@@ -33,13 +56,11 @@
     }
 
     .card { 
-        padding: 20px; 
-    }
-
-    body { 
-        font-size: 15px; 
+        padding: var(--pad); 
     }
 }
+
+// compu //
 
 @media (min-width: 801px) and (max-width: 1200px) {
     :root { 
@@ -47,6 +68,7 @@
     }
 
     .grid {
+        display: grid; 
         grid-template-columns: repeat(3, 1fr); 
     }
 
@@ -57,9 +79,5 @@
 
     body { 
         font-size: 16px; 
-    }
-
-    .grid { 
-        grid-template-columns: repeat(2, 1fr); 
     }
 }

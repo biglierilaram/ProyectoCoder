@@ -1,11 +1,13 @@
 // pasar cosas a sass// 
 
 
-@use 'variables';
-@use 'base';
-@use 'header';
-@use 'content';
-@use 'footer';
-@use 'products';
-@use 'queries';
+@use '../sass/general/variables';
+@use '../sass/general/base';
+@use '../sass/general/header';
+@use '../sass/general/content';
+@use '../sass/general/footer';
+@use '../sass/general/products';
+@use '../sass/general/queries'; 
+@use "../sass/general/animaciones";
+
 

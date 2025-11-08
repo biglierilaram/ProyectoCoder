@@ -1,0 +1,33 @@
+@use "animaciones";
+
+body{
+       
+
+    header{
+         
+         .titulo {
+                      grid-area: titulo;
+                     text-align: center; 
+                     font-size: 3em; 
+                     margin: 0; 
+                     color: white;
+                    }
+        }
+    
+    main{               
+        
+        div {
+
+           .section h3 {
+             text-align: center; 
+              width: 100%; 
+             margin-bottom: 20px; 
+             font-size: 2em; 
+             color: white; 
+             }
+
+            }
+
+        }
+
+}

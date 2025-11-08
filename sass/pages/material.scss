@@ -1,39 +1,40 @@
-
+ @use "variables" ;
+ @use "animaciones" ;
 
 body{
+        
 
+      header {
 
-header {
+           .materialDeportivo {
+           background-image: url('./fotos/bannerMaterial.jpg'); 
+           background-size: cover; 
+           background-position: center; 
+           height: 100vh; 
+           display: flex;
+           flex-direction: column;
+           justify-content: center; 
+           align-items: center; 
 
-   .materialDeportivo {
-    background-image: url('./fotos/bannerMaterial.jpg'); 
-    background-size: cover; 
-    background-position: center; 
-    height: 100vh; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
-
-       .materialDeportivo h1 {
-       font-size: 3em; 
-        }
+                .materialDeportivo h1 {
+               font-size: 3em; 
+               }
       
-   }
+           }
 
 
-}
-
-main {
-
-   h1{  
-       .titulo {
-         grid-area: titulo;
-         text-align: center; 
-         font-size: 3em; 
-         margin: 0; 
-         color: white; 
          }
+
+    main {
+
+          h1{  
+            .titulo {
+            grid-area: titulo;
+            text-align: center; 
+            font-size: 3em; 
+            margin: 0; 
+            color: white; 
+           }
     
          .products-section {
              display: flex;

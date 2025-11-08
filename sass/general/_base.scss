@@ -1,13 +1,13 @@
 // _base.scss//
 
-@use "variables.scss";
+@use "variables";
 
 body {
     margin: 0;
     padding: 10%;
-    font-family: $font-family;
-    background-color: $background-color; 
-    color: $text-color; 
+    font-family: variables.$font-family;
+    background-color: variables.$background-color; 
+    color: variables.$text-color; 
 }
 
 header, main, footer {
@@ -15,8 +15,15 @@ header, main, footer {
     text-align: center;
 }
 
-.titulo {
+titulo {
     font-size: 3em; 
     margin: 0; 
-    color: $text-color; 
+    color: variables.$text-color; 
+}
+
+footer {
+    grid-area: footer;
+    text-align: center; 
+    padding: 20px;
+    background-color: variables.$background-color; 
 }
